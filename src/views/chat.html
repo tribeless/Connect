@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokadoo</title>
+    <!-- Main css -->
+    <link rel="stylesheet" href="../public/css/styles.css">
+     <!-- bootstrap  cdn -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <h1 style="text-align: center; margin: 2rem;" class="h1"></h1>
+    <div class="main-container">
+        <div class="left-col">
+            <h3 class="title" style="text-align: center;">Active users</h3>
+            <ul class="list-group active-users"></ul>
+        </div>
+
+        <div class="right-col">
+            <div class="col toast_user"></div>
+            <div class="col toast_user_left"></div>
+            <div class="usr_messages">
+                <ul id="chat-list" class="list-group"></ul>
+            </div>
+        </div>
+
+        <div class="form-msg">
+            <form id="index">
+                <div class="chat-input">
+                    <input type="text" class="msg_input" name="" id="m" autocomplete="off" style="padding: 0;"
+                        placeholder=" Enter a message">
+                    <button type="submit" class="btn btn-primary msg_btn" style="padding: .5rem;">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../public/js/script.js"></script>
+</body>
+</html>

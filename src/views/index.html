@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Room</title>
+            <!-- Main css -->
+            <link rel="stylesheet" href="../public/css/styles.css">
+            <!-- bootstrap  cdn -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+                integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+                crossorigin="anonymous">
+            </head>
+</head>
+
+    <body>
+        <h1 style="text-align: center; margin: 2rem;">Welcome to Tokadoo</h1>
+        <div class="srnd">
+            <form action="chat.html" id="first">
+                <div class="form-group">
+                    <div class="main_con">
+                        <label for="name" style="text-align: left;">Name:</label>
+                        <input class="first_input" type="text" name="name" id="name" placeholder="Enter your name here" autocomplete="off" required>
+                        <label for="room" style="text-align: left;">Room:</label>
+                        <input class="scd_input" type="text" name="room" id="room" placeholder="Create/Join room" autocomplete="off" required>
+                        <button type="submit" class=" clicked btn btn-primary btn-lg">Submit</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../public/js/script.js"></script>
+    </body>
+
+    
+
+</html>

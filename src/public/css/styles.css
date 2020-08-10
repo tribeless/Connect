@@ -1,0 +1,97 @@
+*{
+    margin-bottom: 0;
+}
+#index{
+    position: fixed;
+    margin-top:3rem;
+    bottom: 0;
+    width: 100%;
+    left:0;
+}
+.chat-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.msg_input{
+    display:inline-block;
+    width: 80%;
+}
+.msg_btn{
+    display:inline-block;
+    margin-left:.5rem;
+}
+.usr_messages{
+    padding:1rem;
+    margin-bottom: 2rem;
+    background: #0b7685;
+}
+.msg{
+    padding:.5rem;
+    margin:1rem;
+}
+.users{
+    margin:.2rem;
+}
+
+input[type="text"]{
+    height:40px;
+    padding: .3rem;
+    outline: none;
+}
+/* making the grid */
+.main-container{
+    display:grid;
+    grid-template-columns:150px 200px;
+    grid-template-rows:1fr;
+    grid-template-areas: "left . right";
+}
+.left-col{
+    grid-area:left;
+}
+.right-col{
+    grid-area: right;
+    margin-right: 2rem;
+}
+
+/* Toasts */
+.toast_user_left{
+    background:rgb(180, 13, 13);
+}
+.toast_user{
+    background:rgb(9, 139, 172);
+}
+.toast_user_left,.toast_user{
+    text-align:center;
+    padding:.8rem;
+    display: none;
+    margin: 1rem;
+    width: 50%;
+    color:white;
+    font-size:1rem;
+}
+.open{
+    display: block;
+}
+.main_con{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.srnd{
+    position: absolute;
+    border:1px solid #000;
+    border-radius: 10px;
+    height: 40vh;
+    background: #dad3d5;
+    width: 50%;
+    left:350px;
+    border: none;
+}
+.first_input,.scd_input{
+    margin-bottom:1rem;
+}
