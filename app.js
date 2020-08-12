@@ -64,6 +64,4 @@ socket.on("details",({name,room})=>{
     });
 });
 
-server.listen(process.env.PORT,()=>{
-    console.log(`app is running at localhost:${port}`);
-})
+server.listen(process.env.PORT);
