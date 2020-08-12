@@ -25,8 +25,6 @@ const {
 //messages func
 const appendMessages = require("./src/model/messages");
 
-const port = process.env.PORT || 8080;
-
 
 //setting up the connection
 io.on("connection",socket=>{
@@ -66,6 +64,6 @@ socket.on("details",({name,room})=>{
     });
 });
 
-server.listen(port,()=>{
+server.listen(process.env.PORT,()=>{
     console.log(`app is running at localhost:${port}`);
 })
